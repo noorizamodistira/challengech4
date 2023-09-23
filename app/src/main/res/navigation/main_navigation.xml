@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homePemesananMakananFragment">
+
+    <fragment
+        android:id="@+id/homePemesananMakananFragment"
+        android:name="com.modiss.challengech3.HomePemesananMakananFragment"
+        android:label="fragment_home_pemesanan_makanan"
+        tools:layout="@layout/fragment_home_pemesanan_makanan" >
+        <action
+            android:id="@+id/action_homePemesananMakananFragment_to_detailFoodFragment"
+            app:destination="@id/detailFoodFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFoodFragment"
+        android:name="com.modiss.challengech3.DetailFoodFragment"
+        android:label="fragment_detail_food"
+        tools:layout="@layout/fragment_detail_food" >
+        <argument
+            android:name="makanan"
+            app:argType="com.modiss.challengech3.Makanan" />
+    </fragment>
+</navigation>

@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">challengech3</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hai_binarian">Hai Binarian,</string>
+    <string name="mau_makan_apa_kamu_hari_ini">Mau makan apa kamu hari ini?</string>
+    <string name="diskon_30">Diskon 30%</string>
+    <string name="pesan_makanan_dengan_aplikasi_dan_dapatkan_diskonmu">Pesan makanan dengan aplikasi dan dapatkan diskonmu</string>
+    <string name="burger">Burger</string>
+    <string name="mie">Mie</string>
+    <string name="snack">Snack</string>
+    <string name="minuman">Minuman</string>
+    <string name="list_menu_makanan">List Menu Makanan</string>
+
+    <string-array name="nama_makanan">
+        <item>Ayam Bakar</item>
+        <item>Cappucino</item>
+        <item>Burger</item>
+        <item>Mie Goreng</item>
+        <item>Dimsum</item>
+        <item>Coffee Latte</item>
+        <item>Ayam Crispy Spicy</item>
+        <item>Dimsum Dumpling</item>
+        <item>Pizza</item>
+        <item>Salmon Sushi</item>
+        <item>Spaghetti</item>
+        <item>Strawberry Milk</item>
+        <item>Xiaolongbao Dumplings</item>
+        <item>French Fries</item>
+        <item>Fried Chicken</item>
+        <item>Chicken Grill</item>
+        <item>Sate Ayam</item>
+        <item>Mie Kuah</item>
+    </string-array>
+
+    <string-array name="harga_makanan">
+        <item>Rp. 24000</item>
+        <item>Rp. 14000</item>
+        <item>Rp. 18000</item>
+        <item>Rp. 15000</item>
+        <item>Rp. 17000</item>
+        <item>Rp. 14000</item>
+        <item>Rp. 25000</item>
+        <item>Rp. 17000</item>
+        <item>Rp. 29000</item>
+        <item>Rp. 34000</item>
+        <item>Rp. 24000</item>
+        <item>Rp. 18000</item>
+        <item>Rp. 18000</item>
+        <item>Rp. 16000</item>
+        <item>Rp. 17000</item>
+        <item>Rp. 41000</item>
+        <item>Rp. 21000</item>
+        <item>Rp. 18000</item>
+    </string-array>
+
+    <integer-array name="photo_makanan">
+        <item>@drawable/ic_image_1</item>
+        <item>@drawable/ic_image_2</item>
+        <item>@drawable/ic_image_3</item>
+        <item>@drawable/ic_image_4</item>
+        <item>@drawable/ic_image_5</item>
+        <item>@drawable/ic_image_6</item>
+        <item>@drawable/ic_image_7</item>
+        <item>@drawable/ic_image_8</item>
+        <item>@drawable/ic_image_9</item>
+        <item>@drawable/ic_image_10</item>
+        <item>@drawable/ic_image_11</item>
+        <item>@drawable/ic_image_12</item>
+        <item>@drawable/ic_image_13</item>
+        <item>@drawable/ic_image_15</item>
+        <item>@drawable/ic_image_16</item>
+        <item>@drawable/ic_image_17</item>
+        <item>@drawable/ic_image_18</item>
+        <item>@drawable/ic_image_19</item>
+    </integer-array>
+    <style name="TextHeadLine">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#424242</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextHeadLine.2" parent="TextHeadLine">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextBaseLine">
+        <item name="fontFamily">@font/inter</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#1D232E</item>
+    </style>
+
+    <style name="TextBaseLine.2" parent="TextBaseLine">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="TextBaseLine.3" parent="TextBaseLine">
+        <item name="fontFamily">@font/inter_extrabold</item>
+        <item name="android:textColor">#1D232E</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextBaseLine.4" parent="TextBaseLine.3">
+        <item name="android:textColor">#1D232E</item>
+        <item name="android:textSize">10dp</item>
+
+    </style><style name="TextBaseLine.5" parent="TextBaseLine.4">
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="TextBaseLine.6" parent="TextBaseLine">
+        <item name="android:textColor">#363636</item>
+    </style>
+
+    <style name="TextBaseLine.7" parent="TextBaseLine.3">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="TextBaseLine.8" parent="TextBaseLine.5">
+        <item name="android:textSize">12dp</item>
+    </style>
+</resources>
