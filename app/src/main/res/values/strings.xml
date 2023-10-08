@@ -74,6 +74,7 @@
         <item>@drawable/ic_image_18</item>
         <item>@drawable/ic_image_19</item>
     </integer-array>
+
     <style name="TextHeadLine">
         <item name="fontFamily">@font/roboto_bold</item>
         <item name="android:textSize">18dp</item>
@@ -107,7 +108,9 @@
         <item name="android:textColor">#1D232E</item>
         <item name="android:textSize">10dp</item>
 
-    </style><style name="TextBaseLine.5" parent="TextBaseLine.4">
+    </style>
+
+    <style name="TextBaseLine.5" parent="TextBaseLine.4">
         <item name="android:textColor">#333333</item>
         <item name="android:textSize">18dp</item>
     </style>
@@ -123,4 +126,30 @@
     <style name="TextBaseLine.8" parent="TextBaseLine.5">
         <item name="android:textSize">12dp</item>
     </style>
+
+    <string name="delivered_to">Delivered to</string>
+    <string name="jalan_depok_timur">Jalan Depok Timur</string>
+    <string name="tahu_bulat_digoreng_dadakan">Tahu bulat Digoreng Dadakan</string>
+    <string name="you_might_looking_for">You might looking for</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="title_tab_home">Home</string>
+    <string name="title_tab_cart">Cart</string>
+    <string name="title_tab_profile">Profile</string>
+    <string name="app_settings">App Settings</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="text_checkout">Checkout</string>
+    <string name="text_total_price">Total Price</string>
+    <string name="text_hint_notes">Notes</string>
+    <string name="text_title_order_confirmation">Order Confirmation</string>
+    <string name="text_delivery_method">Delivery Method</string>
+    <string name="text_pick_up">Pick Up</string>
+    <string name="text_delivery">Delivery</string>
+    <string name="text_payment_method">Payment Method</string>
+    <string name="text_cash">Cash</string>
+    <string name="text_e_wallet">E-Wallet</string>
+    <string name="text_cart_is_empty">Cart is Empty</string>
+    <string name="text_btn_add_to_cart">Add to cart</string>
+    <string name="text_title_your_cart">Your Cart</string>
+    <string name="total_quantity">x%s</string>
+    <string name="shopping_summary">Shopping summary</string>
 </resources>

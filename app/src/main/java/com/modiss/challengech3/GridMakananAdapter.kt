@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 
 class GridMakananAdapter(
     private val listMakanan: ArrayList<Makanan>,
@@ -19,9 +20,14 @@ class GridMakananAdapter(
 
     override fun onBindViewHolder(holder: GridViewHolder, position: Int) {
         val (nama, harga, photo) = listMakanan[position]
-        holder.ivPhotoCatalog.setImageResource(photo)
+
+        Glide.with(holder.itemView.context)
+            .load(photo)
+            .into(holder.ivPhotoCatalog)
+
         holder.tvNamaMakanan.text = nama
         holder.tvHargaMakanan.text = harga
+
         holder.itemView.setOnClickListener {
             onClick(listMakanan[position])
         }

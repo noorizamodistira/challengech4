@@ -23,4 +23,23 @@
             android:name="makanan"
             app:argType="com.modiss.challengech3.Makanan" />
     </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.modiss.challengech3.HomePemesananMakananFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home_pemesanan_makanan" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.modiss.challengech3.CartFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.modiss.challengech3.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile" />
+
 </navigation>

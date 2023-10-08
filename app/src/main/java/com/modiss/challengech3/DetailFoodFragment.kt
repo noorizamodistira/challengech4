@@ -8,6 +8,10 @@ import android.view.ViewGroup
 import com.modiss.challengech3.databinding.FragmentDetailFoodBinding
 import android.content.Intent
 import android.net.Uri
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import com.modiss.challengech3.databinding.FragmentHomePemesananMakananBinding
 
 
@@ -35,9 +39,13 @@ class DetailFoodFragment : Fragment() {
         binding.ivPhotoProductDetail.setImageResource(makanan.photo)
         binding.btnAdd.setOnClickListener {
             val url = "https://maps.app.goo.gl/h4wQKqaBuXzftGK77"
-            val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(url)
-            startActivity(intent)
+            CoroutineScope(Dispatchers.IO).launch {
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.data = Uri.parse(url)
+                withContext(Dispatchers.Main) {
+                    startActivity(intent)
+                }
+            }
         }
 
     }
