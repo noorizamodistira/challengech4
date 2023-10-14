@@ -1,4 +1,4 @@
-package com.modiss.challengech3
+package com.modiss.challengech3.presentation.cart
 
 import android.content.Intent
 import android.os.Bundle

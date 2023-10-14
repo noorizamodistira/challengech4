@@ -1,4 +1,4 @@
-package com.modiss.challengech3
+package com.modiss.challengech3.presentation.home
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,10 @@ import android.view.ViewGroup
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.modiss.challengech3.GridMakananAdapter
+import com.modiss.challengech3.ListMakananAdapter
+import com.modiss.challengech3.Makanan
+import com.modiss.challengech3.R
 import com.modiss.challengech3.databinding.FragmentHomePemesananMakananBinding
 
 
@@ -51,7 +55,7 @@ class HomePemesananMakananFragment : Fragment() {
     private fun showRecyclerGrid() {
         binding.rvListMakanan.layoutManager = GridLayoutManager(requireContext(), 2)
         val gridMakananAdapter = GridMakananAdapter(list, onClick = {
-            val toDetailFoodFragment = HomePemesananMakananFragmentDirections.actionHomePemesananMakananFragmentToDetailFoodFragment(it)
+            val toDetailFoodFragment = com.modiss.challengech3.HomePemesananMakananFragmentDirections.actionHomePemesananMakananFragmentToDetailFoodFragment(it)
             view?.findNavController()?.navigate(toDetailFoodFragment)
         })
         binding.rvListMakanan.adapter = gridMakananAdapter
@@ -74,7 +78,7 @@ class HomePemesananMakananFragment : Fragment() {
     private fun showRecyclerList() {
         binding.rvListMakanan.layoutManager = LinearLayoutManager(requireContext())
         val listMakananAdapter = ListMakananAdapter(list, onClick = {
-            val toDetailFoodFragment = HomePemesananMakananFragmentDirections.actionHomePemesananMakananFragmentToDetailFoodFragment(it)
+            val toDetailFoodFragment = com.modiss.challengech3.HomePemesananMakananFragmentDirections.actionHomePemesananMakananFragmentToDetailFoodFragment(it)
             view?.findNavController()?.navigate(toDetailFoodFragment)
         })
         binding.rvListMakanan.adapter = listMakananAdapter

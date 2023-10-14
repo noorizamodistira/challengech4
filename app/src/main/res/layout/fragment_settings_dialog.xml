@@ -7,7 +7,7 @@
     android:paddingTop="16dp"
     android:paddingHorizontal="16dp"
     android:paddingBottom="48dp"
-    tools:context="com.modiss.challengech3.ProfileFragment">
+    tools:context="com.modiss.challengech3.presentation.profile.ProfileFragment">
 
     <TextView
         android:id="@+id/tv_title_dialog"

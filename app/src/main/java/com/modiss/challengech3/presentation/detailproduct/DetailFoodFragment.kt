@@ -1,4 +1,4 @@
-package com.modiss.challengech3
+package com.modiss.challengech3.presentation.detailproduct
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -12,7 +12,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import com.modiss.challengech3.databinding.FragmentHomePemesananMakananBinding
 
 
 class DetailFoodFragment : Fragment() {
@@ -32,7 +31,7 @@ class DetailFoodFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val makanan = DetailFoodFragmentArgs.fromBundle(arguments as Bundle).makanan
+        val makanan = com.modiss.challengech3.DetailFoodFragmentArgs.fromBundle(arguments as Bundle).makanan
 
         binding.tvNamaMakanan2.text = makanan.nama
         binding.tvHargaMakanan2.text = makanan.harga
